@@ -38,11 +38,11 @@
  * @author Lorenz Meier <lorenz@px4.io>
  * @author Anton Babushkin <anton.babushkin@me.com>
  */
-
 #include <stdio.h>
 #include <errno.h>
 
 #include "mavlink_main.h"
+
 #include "mavlink_messages.h"
 #include "mavlink_command_sender.h"
 
@@ -98,8 +98,10 @@
 #include <uORB/topics/collision_report.h>
 #include <uORB/topics/sensor_accel.h>
 #include <uORB/topics/sensor_gyro.h>
+// GDP
+#include <uORB/topics/gdp_uav_state.h>
+// GDP
 #include <uORB/uORB.h>
-
 
 static uint16_t cm_uint16_from_m_float(float m);
 static void get_mavlink_mode_state(struct vehicle_status_s *status, uint8_t *mavlink_state,

@@ -41,7 +41,6 @@
  */
 
 #pragma once
-
 #include <px4_posix.h>
 
 #include <stdbool.h>
@@ -68,7 +67,7 @@
 #include <uORB/topics/mission_result.h>
 #include <uORB/topics/telemetry_status.h>
 
-#include "mavlink_bridge_header.h"
+#include "mavlink_bridge_header.h"	
 #include "mavlink_orb_subscription.h"
 #include "mavlink_stream.h"
 #include "mavlink_messages.h"
